@@ -1,0 +1,13 @@
+plugins {
+    id 'org.springframework.boot' version '1.5.3.RELEASE'
+}
+
+dependencies {
+    compile project(':core')
+
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-hateoas")
+    compile("org.springframework.boot:spring-boot-starter-security")
+
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+}

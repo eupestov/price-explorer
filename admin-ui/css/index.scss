@@ -1,0 +1,14 @@
+@import "../node_modules/ng-admin/build/ng-admin.min.css";
+
+.login-form {
+	height:140px;
+	width:200px;
+	margin:auto;
+	border:1px #CCC solid;
+	padding:10px;
+}
+
+.login-form input {
+	padding:5px;
+	margin:5px
+}

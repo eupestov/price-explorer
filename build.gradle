@@ -1,0 +1,30 @@
+plugins {
+    id 'nebula.provided-base' version '3.0.3'
+    id "io.spring.dependency-management" version "1.0.2.RELEASE"
+}
+
+subprojects {
+
+    apply plugin: 'java'
+    apply plugin: 'nebula.provided-base'
+    apply plugin: 'io.spring.dependency-management'
+
+    group 'com.example'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    repositories {
+        jcenter()
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom "org.springframework.boot:spring-boot-dependencies:1.5.3.RELEASE"
+        }
+    }
+
+    dependencies {
+        provided("org.projectlombok:lombok")
+    }
+}
